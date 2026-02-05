@@ -40,7 +40,7 @@ CodeEditor::CodeEditor(QWidget *parent) : HighlightableTextEdit(parent) {
 
   // Set font for the entire widget. calls to fontMetrics() will get the
   // dimensions of the currently set font
-  m_font = QFont(Fonts::monospace, 11);
+  m_font = QFont(Fonts::monospace, 20);
   setFont(m_font);
   m_fontTimer.setSingleShot(true);
   setTabStopDistance(QFontMetricsF(m_font).horizontalAdvance(' ') * 4);

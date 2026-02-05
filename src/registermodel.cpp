@@ -114,7 +114,7 @@ QVariant RegisterModel::data(const QModelIndex &index, int role) const {
     case Qt::UserRole:
       return QVariant::fromValue(m_radix);
     case Qt::FontRole:
-      return QFont(Fonts::monospace, 11);
+      return QFont(Fonts::monospace, 20);
     case Qt::ForegroundRole:
       return QBrush(Qt::blue);
     case Qt::EditRole:
