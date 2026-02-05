@@ -3,11 +3,11 @@ name: Release setup
 on:
   push:
     branches:
-      - '*'
+      - 'master'
 
 jobs:
   release-setup:
-    if: github.repository == 'mortbopet/Ripes'
+    if: github.repository == 'UPD-DCS/Ripes'
     runs-on: ubuntu-latest
     steps:
 
