@@ -82,7 +82,7 @@ jobs:
         files: Ripes*.AppImage*
         tag_name: continuous
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.RIPES_WORKFLOW_TOKEN }}
 
     - if: (startsWith(github.ref, 'refs/tags/')) && (matrix.build-type == 'Release')
       name: tagged release
@@ -90,4 +90,4 @@ jobs:
       with:
         files: Ripes*.AppImage*
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.RIPES_WORKFLOW_TOKEN }}
